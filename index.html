@@ -294,6 +294,29 @@
     <!-- darkmode js -->
     <script src="./js/dark-mode-switch.min.js"></script>
     <script src="./js/script.js"></script>
+    <script>
+  const form = document.forms["contact"];
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString()
+    })
+    .then(() => {
+      alert("✅ Thank you for contacting me — I’ll reach out to you soon!");
+      form.reset();
+    })
+    .catch(() => {
+      alert("❌ Something went wrong. Please try again.");
+    });
+  });
+</script>
+
 
 </body>
 
