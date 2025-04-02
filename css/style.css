@@ -245,5 +245,9 @@ a:hover {
           line-height: 1.6;
           padding: 0 10px;
         }
-      }     
+      } 
+    .collapse.navbar-collapse {
+      transition: max-height 0.4s ease-in-out;
+      overflow: hidden;
+    }
 }
