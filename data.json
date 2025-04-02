@@ -1,0 +1,130 @@
+{
+    "projects": [{
+            "nama": "Crop Recommendation Using ESP32",
+            "img": "../img/project_themes/farm.gif",
+            "link": ["https://github.com/anant13sharma/Crop-Recommendation-Model-ESP32"],
+            "desc": "This is a fully embedded crop recommendation system that runs on an ESP32 board using a trained machine learning model. The model is deployed in TensorFlow Lite format and uses simulated environmental input to predict the most suitable crop for cultivation.",
+            "tags":[
+                "Smart Farming",
+                "Neural Network",
+                "ML"
+            ]
+        },
+        {
+            "nama": "A Machine Learning Based Crop Recommendation System",
+            "img": "../img/project_themes/Farmer.gif",
+            "link": ["https://github.com/anant13sharma/A-Machine-Learning-Based-Crop-Recommendation-System"],
+            "desc": "Trained on 69K+ samples, this system predicts crops using soil and climate data, applying models like Logistic Regression, Naive Bayes, Decision Tree, Random Forest, and Neural Network.",
+            "tags":[
+                "Machine Learning",
+                "AI",
+                "Models"
+            ]
+        },
+        {
+            "nama": "Smart Houses IoT Based Home Automation System",
+            "img": "../img/project_themes/smart_house.gif",
+            "link": ["https://github.com/anant13sharma/Smart-Houses-IoT-Based-Home-Automation-System"],
+            "desc": "An IoT-based smart home automation system using NodeMCU, Arduino, Blynk, IFTTT, and Google Assistant.",
+            "tags":[
+                "Arduino",
+                "NodeMCU",
+                "IoT"
+            ]
+        },
+        {
+            "nama": "Shop Lane Ecommerce Website",
+            "img": "../img/project_themes/ecommerce.gif",
+            "link": ["https://github.com/anant13sharma/Shope-lane"],
+            "desc": "Shop Lane is a mobile-responsive e-commerce website built using HTML, CSS, JavaScript, and APIs. It showcases features like dynamic product listings, category-based filtering, and clean UI design—designed as a sample front-end for modern online stores.",
+            "tags":[
+                "html",
+                "css",
+                "js"
+            ]
+        },
+        {
+            "nama": "NASA Astronomy Picture of the Day",
+            "img": "../img/nasa.gif",
+            "link": ["https://github.com/anant13sharma/NASA-Astronomy-Picture-of-the-Day---JavaScript-App", "https://peaceful-heliotrope-f79d6f.netlify.app"],
+            "desc": "Astronomy photo viewer using NASA's REST API and local storage for favoriting.",
+            "tags":[
+                "html & CSS",
+                "API",
+                "js"
+            ]
+        },
+        {
+            "nama": "Talk-A-Tive",
+            "img": "../img/talk-a-tive.gif",
+            "link": ["https://github.com/anant13sharma/Talk-A-Tive-Chat-App-MERN-", "https://web-production-5db62.up.railway.app"],
+            "desc": "Talk-a-tive is a Full Stack Chatting App. Uses Socket.io for real time communication and stores user details in encrypted format in Mongo DB Database.",
+            "tags":[
+                "Javascript",
+                "MongoDB",
+                "Node & Express"
+            ]
+        }
+        ],
+        "certificates": [
+        {
+            "img": "../img/certificates/CertificateOfCompletion_SQL for Data Analysis_page-0001.jpg",
+            "ket": "SQL for Data Analysis via LinkedIn Learning",
+            "tags":[
+                "data_analysis",
+                "data_skills",
+                "SQL"
+            ]
+        },
+        {
+            "img": "../img/certificates/CertificateOfCompletion_Advanced Google Analytics_page-0001.jpg",
+            "ket": "Advanced Google Analytics via LinkedIn Learning",
+            "tags":[
+                "Google Analytics",
+                "Marketing Analytics",
+                "Digital Marketing"
+            ]
+        },
+        {
+            "img": "../img/certificates/CERTIFICATE_LANDING_PAGE~VJAVD9CKRRFJ.jpeg",
+            "ket": "Industrial IoT course on Google Cloud via Coursera",
+            "tags":[
+                "google cloud",
+                "internet of things",
+                "cloud computing"
+            ]
+        },
+        
+        
+        {
+            "img": "../img/certificates/CERTIFICATE_LANDING_PAGE~K4QBYJ8CPLAK.jpeg",
+            "ket": "IBM course on Cybersecurity Tools and Cyberattacks via Coursera",
+            "tags":[
+                "cybersecurity",
+                "cyberattacks",
+                "network security"
+            ]
+        },
+        {
+            "img": "../img/certificates/Programming for the Web with JavaScript.png",
+            "ket": "Programming for the Web with JavaScript via edX",
+            "tags":[
+                "html",
+                "css",
+                "js"
+            ]
+        },
+        {
+            "img": "../img/certificates/certificate anant python_page-0001.jpg",
+            "ket": "Certified in Core Python by Keen Infotech, India",
+            "tags":[
+                "python",
+                "core python",
+                "programming"
+            ]
+        }
+       
+
+    ]
+
+}
