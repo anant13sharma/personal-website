@@ -231,6 +231,19 @@ a:hover {
         height: auto;
         opacity: 0.1;
     }
-
-
+     .about-text {
+        font-size: 1rem;
+        text-align: justify;
+        line-height: 1.7;
+        letter-spacing: 0.5px;
+        margin-bottom: 1rem;
+      }
+      
+      @media (max-width: 576px) {
+        .about-text {
+          font-size: 0.95rem;
+          line-height: 1.6;
+          padding: 0 10px;
+        }
+      }     
 }
