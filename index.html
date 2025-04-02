@@ -234,8 +234,10 @@
                         </div>
                         <div class="col-lg-6 col-md-12 p-lg-5 p-md-0  form-container">
                             <form name="contact" method="POST" data-netlify="true" netlify-recaptcha>
+  <!-- ✅ REQUIRED: Helps Netlify recognize the form -->
   <input type="hidden" name="form-name" value="contact" />
-  
+  <input type="hidden" name="_redirect" value="/" />
+
   <div class="form-group">
     <label class="text-secondary font-weight-bold mt-2">May I know your name?</label>
     <input type="text" name="name" class="form-control" placeholder="Enter your full name..." required />
@@ -251,11 +253,12 @@
     <textarea name="message" class="form-control" rows="4" placeholder="Add a message or details..." required></textarea>
   </div>
 
-  <!-- Netlify reCAPTCHA -->
+  <!-- ✅ reCAPTCHA Box -->
   <div data-netlify-recaptcha="true" class="mb-3"></div>
 
   <button type="submit" class="btn btn-gradient mt-4">Submit</button>
 </form>
+
 
                         </div>
                     </div>
