@@ -46,6 +46,51 @@ getData('project').then(res => {
     });
 });
 
+// Render Certificates as Bootstrap Carousel without tags
+getData('certificate').then(certificates => {
+    if (!certificates) return;
+
+    const indicators = certificates.map((_, index) => 
+        `<li data-target="#certCarousel" data-slide-to="${index}" class="${index === 0 ? 'active' : ''}"></li>`
+    ).join('');
+
+    const items = certificates.map((data, index) => {
+        const activeClass = index === 0 ? 'active' : '';
+        return `
+            <div class="carousel-item ${activeClass}">
+                <div class="d-flex flex-column align-items-center">
+                    <img src="${data.img}" class="img-fluid rounded mb-3" alt="${data.ket}" style="max-height: 500px; object-fit: contain;">
+                    <div class="text-center pb-5">
+                        <h5 class="gradient-text mb-2">${data.ket}</h5>
+                    </div>
+                </div>
+            </div>`;
+    }).join('');
+
+    certificateContainer.innerHTML = `
+        <div id="certCarousel" class="carousel slide" data-ride="carousel" data-interval="2500">
+            <div class="carousel-inner">
+                ${items}
+            </div>
+            <ol class="carousel-indicators">
+                ${indicators}
+            </ol>
+            <a class="carousel-control-prev d-none d-md-flex align-items-center justify-content-center" href="#certCarousel" role="button" data-slide="prev" style="width: 40px; height: 40px; background-color: rgba(0,0,0,0.5); border-radius: 50%; position: absolute; top: 50%; transform: translateY(-50%); left: 15px; z-index: 2;">
+                <span class="text-white" style="font-size: 2rem;">&lt;</span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next d-none d-md-flex align-items-center justify-content-center" href="#certCarousel" role="button" data-slide="next" style="width: 40px; height: 40px; background-color: rgba(0,0,0,0.5); border-radius: 50%; position: absolute; top: 50%; transform: translateY(-50%); right: 15px; z-index: 2;">
+                <span class="text-white" style="font-size: 2rem;">&gt;</span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>`;
+});
+
+
+
+
+
+/*
 getData('certificate').then(res => {
     res.forEach(data => {
         const element2 = document.createElement('div');
@@ -57,7 +102,7 @@ getData('certificate').then(res => {
         certificateContainer.appendChild(element2);
     });
 });
-
+*/
 
 
 
