@@ -115,7 +115,7 @@ a.text-secondary:hover {
 }
 .profile-pic {
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
     aspect-ratio: 1 / 1;
     background-image: url('../img/anant.jpeg'); /* Update path if needed */
     background-size: cover;
