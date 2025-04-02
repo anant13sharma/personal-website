@@ -114,14 +114,32 @@ a.text-secondary:hover {
     transition: all .7s ease-in;
 }
 .profile-pic {
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 1 / 1;
+    background-image: url('../img/anant.jpeg'); /* Update path if needed */
+    background-size: cover;
+    background-position: 0 -30px;
+    border-radius: 50%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin: 0 auto;
+  }
+
+
+
+
+
+
+
+/*.profile-pic {
     width: 500px;
     height: 500px;
-    background-image: url('../img/anant.jpeg'); /* use ./img/anant.jpeg if CSS is in root */
+    background-image: url('../img/anant.jpeg'); /* use ./img/anant.jpeg if CSS is in root 
     background-size: cover;
     background-position: 0 -30px;
     border-radius: 40%;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
+}*/
 
 
 input {
