@@ -233,23 +233,30 @@
                             
                         </div>
                         <div class="col-lg-6 col-md-12 p-lg-5 p-md-0  form-container">
-                            <form class="form col-12 p-md-0" netlify>
-                                <div class="row mx-1 ">
-                                    <label for="name" class="text-secondary font-weight-bold mt-2">May I know your name?</label><br>
-                                    <input type="text" class="form-control col-12" placeholder="Enter your full name..."
-                                        id="name">
-                                </div>
-                                <div class="row mx-1 ">
-                                    <label for="subject" class="text-secondary font-weight-bold mt-2">What can I help you with today?</label><br>
-                                    <input type="text" class="form-control col-12" placeholder="Type your message here..."
-                                        id="subject">
-                                </div>
-                                <div class="row mx-1 ">
-                                    <label for="message" class="text-secondary font-weight-bold mt-2">Anything else you'd like to share?</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Add a message or details..."></textarea>
-                                    <button type="submit" class="btn btn-gradient mt-4">Submit</button>
-                                </div>
-                            </form>
+                            <form name="contact" method="POST" data-netlify="true" netlify-recaptcha>
+  <input type="hidden" name="form-name" value="contact" />
+  
+  <div class="form-group">
+    <label class="text-secondary font-weight-bold mt-2">May I know your name?</label>
+    <input type="text" name="name" class="form-control" placeholder="Enter your full name..." required />
+  </div>
+
+  <div class="form-group">
+    <label class="text-secondary font-weight-bold mt-2">What can I help you with today?</label>
+    <input type="text" name="subject" class="form-control" placeholder="Type your message here..." required />
+  </div>
+
+  <div class="form-group">
+    <label class="text-secondary font-weight-bold mt-2">Anything else you'd like to share?</label>
+    <textarea name="message" class="form-control" rows="4" placeholder="Add a message or details..." required></textarea>
+  </div>
+
+  <!-- Netlify reCAPTCHA -->
+  <div data-netlify-recaptcha="true" class="mb-3"></div>
+
+  <button type="submit" class="btn btn-gradient mt-4">Submit</button>
+</form>
+
                         </div>
                     </div>
                 </div>
