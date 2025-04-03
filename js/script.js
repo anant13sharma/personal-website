@@ -12,6 +12,7 @@ async function getData(type) {
     }
 }
 
+/*
 getData('project').then(res => {
     res.forEach(data => {
         const element = document.createElement('div');
@@ -45,6 +46,7 @@ getData('project').then(res => {
         projectContainer.appendChild(element);
     });
 });
+*/
 
 // Render Certificates as Bootstrap Carousel without tags
 getData('certificate').then(certificates => {
