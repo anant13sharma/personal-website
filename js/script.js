@@ -48,6 +48,16 @@ getData('project').then(res => {
 });
 */
 
+
+
+
+// This will fetch data from tech-skills.html
+    fetch('tech-skills.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('techSkillsContainer').innerHTML = data;
+    });
+
 // Render Certificates as Bootstrap Carousel without tags
 getData('certificate').then(certificates => {
     if (!certificates) return;
