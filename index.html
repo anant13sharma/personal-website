@@ -177,7 +177,13 @@
           <div class="row text-center text-lg-left align-items-center p-3">
             <!-- Copyright text -->
             <div class="col-12 col-lg-6 mb-3 mb-lg-0">
-              <p class="text-secondary h6 mb-0">&copy; 2025 Anant Sharma. All rights reserved.</p>
+                       <!-- Copyright date update automatic-->
+              <p id="copyright">© <span id="year"></span> Anant Sharma. All rights reserved.</p>
+              <script>
+                document.getElementById("year").textContent = new Date().getFullYear();
+              </script>
+              
+                    <!-- Copyright date update automatic-->    
             </div>
           
             <!-- Social media icons -->
