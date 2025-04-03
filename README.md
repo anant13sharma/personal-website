@@ -1,4 +1,4 @@
-# 🌐 Personal Portfolio Website
+# 🌐 Personal Portfolio Website (View in Code Mode)
 
 A clean, responsive, and developer-friendly personal portfolio template built using **HTML5**, **CSS3**, **Bootstrap 4.6**, and **vanilla JavaScript**. Perfect for showcasing your projects, skills, certifications, and personal branding.
 
