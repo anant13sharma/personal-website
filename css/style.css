@@ -233,6 +233,66 @@ a:hover {
     border-radius: 0.5rem;
   }
   
+/* ==================== */
+/* Tech I am familiar with Starts */
+/* ==================== */
+/* ============================= */
+/* Tech Skill Icons & Boxes     */
+/* ============================= */
+
+.tech-icon {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+  
+  .icon-box {
+    transition: background 0.3s ease, color 0.3s ease;
+    border-radius: 0.5rem;
+    flex-wrap: wrap; /* change to wrap if needed */
+    overflow: hidden;
+    min-width: 0;
+  }
+  .icon-box h3 {
+    font-size: 0.95rem;
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    flex: 1;
+  }
+    
+  
+  /* Zoom effect on icon hover */
+  .icon-box:hover .tech-icon {
+    transform: scale(1.1);
+  }
+  
+  /* ============================= */
+  /* Dark Mode Styling             */
+  /* ============================= */
+  
+  /* Gradient text in dark mode */
+  [data-theme="dark"] .theme-text {
+    background: -webkit-linear-gradient(120deg, rgba(220, 15, 237, 1) 0%, rgba(0, 212, 255, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+  
+  /* Icon box appearance in dark mode */
+  [data-theme="dark"] .icon-box {
+    background-color: #2a2a2a !important; /* soft dark gray */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* subtle depth */
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+/* ==================== */
+/* Tech I am familiar with Ends */
+/* ==================== */
 
 
 
