@@ -83,7 +83,7 @@
                 <p class="h5 letter-spacing-sm font-weight-light ml-2"> <span class="gradient-text font-weight-bold"> Turning ideas into code — learning, building, and growing every step of the way.</span> </p>
                 <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center mt-4 gap-2">
                   <a href="#contact" class="btn btn-gradient btn-lg px-4 mb-2 mb-sm-0 mr-sm-3">Contact Me</a>
-                  <a href="https://your-cv-link.com" target="_blank" class="btn btn-gradient btn-lg px-4">Download CV</a>
+                  <a href="NULL" id="downloadCV" target="_blank" class="btn btn-gradient btn-lg px-4">Download CV</a>
                 </div>
             </div>
         </section>
@@ -369,6 +369,16 @@
                 alert("❌ Something went wrong. Please try again.");
             });
         });
+    </script>
+        <script>
+      document.getElementById('downloadCV').addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href === 'NULL' || href === '#' || href.trim().toLowerCase() === 'null') {
+          e.preventDefault();
+          alert("🚧 I’m currently updating my resume — it’ll be available soon! Meanwhile, feel free to contact me.");
+        }
+        // else the browser will follow the link as normal
+      });
     </script>
 </body>
 
