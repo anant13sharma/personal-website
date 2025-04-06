@@ -31,3 +31,4 @@ personal-website/
 ├── icons/ # Logos for tools, tech, and badges 
 ├── data.json # Optional: For structured data (certificates, etc.) 
 └── README.md # This file
+🔧 Currently improving mobile responsiveness and accessibility.
