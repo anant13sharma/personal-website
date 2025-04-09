@@ -1,3 +1,23 @@
+/* Unified custom navbar link styling */
+.custom-navbar .nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link:focus {
+    color: #9b55f3 !important;
+    text-shadow: 0 0 5px rgba(155, 85, 243, 0.7);
+}
+
+.navbar-nav .nav-item.active .nav-link {
+    color: #ffffff !important;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
 
@@ -10,11 +30,13 @@ body {
     overflow-x: hidden !important;
 }
 
-.active {
-    background: -webkit-linear-gradient(120deg, rgba(218, 15, 237, 0.836) 0%, rgba(0, 213, 255, 0.829) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+/* Remove gradient effect from .active class */
+.navbar-nav .nav-item.active .nav-link {
+    color: #ffffff !important;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
 }
+
 
 .active:hover {
     font-weight: 600;
@@ -303,12 +325,7 @@ a:hover {
     z-index: 999;
   }
   
-  .custom-navbar .nav-link {
-    color: #e0e0e0 !important;
-    font-weight: 500;
-    padding: 10px 15px;
-    transition: color 0.3s ease;
-  }
+  
   
   .custom-navbar .nav-link:hover {
     color: #9b55f3 !important;
@@ -319,12 +336,7 @@ a:hover {
 
 
 @media (min-width: 768px) {
-    body {
-        font-family: 'Poppins', sans-serif;
-        overflow-x: hidden !important;
-    }
-
-    section {
+section {
         min-height: 80vh;
     }
 
