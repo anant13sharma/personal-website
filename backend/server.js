@@ -31,7 +31,7 @@ app.post('/track', (req, res) => {
   const device = `${agent.device.toString()} - ${agent.os.toString()} - ${agent.toAgent()}`;
   const ip = req.headers['x-forwarded-for'] || req.socket.remoteAddress;
 
-  console.log(`📥 Visit logged from ${ip} using ${device}`);
+  console.log(`📥 New visit: ${ip} using ${device}`); // 👈 ADD THIS
 
   const newVisit = new Visit({ device, ip });
   newVisit.save()

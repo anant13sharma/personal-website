@@ -1,0 +1,29 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "A clean, responsive, and developer-friendly personal portfolio template built using **HTML5**, **CSS3**, **Bootstrap 4.6**, and **vanilla JavaScript**. Perfect for showcasing your projects, skills, certifications, and personal branding.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anant13sharma/personal-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anant13sharma/personal-website/issues"
+  },
+  "homepage": "https://github.com/anant13sharma/personal-website#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mongodb": "^6.15.0",
+    "mongoose": "^8.13.2",
+    "useragent": "^2.3.0"
+  }
+}
