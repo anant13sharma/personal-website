@@ -16,6 +16,37 @@ A clean, responsive, and developer-friendly personal portfolio template built us
 
 ---
 
+## 📊 Visitor Tracking Feature
+
+This project includes a lightweight visitor tracking system built with **Node.js**, **Express**, and **MongoDB Atlas**. It logs basic visitor metadata to gain insights into how the site is accessed and from what devices or browsers.
+
+### 🔍 What It Does
+
+- Tracks each visit to the website via a `POST` request from the frontend.
+- Logs the following details:
+  - 🌐 **IP Address**
+  - 💻 **Device Info**
+  - 🖥️ **Operating System**
+  - 🧭 **Browser Name & Version**
+  - 🕒 **Timestamp**
+- Stores all the collected data in a MongoDB Atlas collection.
+
+### 🛠️ Tech Stack
+
+- **Backend:** Node.js, Express
+- **Database:** MongoDB Atlas
+- **Tools:** `useragent`, `dotenv`, `cors`
+- **Hosting:** Render
+
+### 🔐 Security
+
+Sensitive environment variables like `MONGO_URI` are managed using a `.env` file and excluded from version control via `.gitignore`.
+
+### 🧪 Example Console Log Output
+
+
+
+
 ## 📁 Project Structure
 
 personal-website/
