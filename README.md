@@ -35,11 +35,11 @@ This is a lightweight backend server that logs visitor information such as IP ad
 ## 🛠 Live Usage Example
 
 Include this in your site’s HTML to automatically track visits:
-
-```html
 <script>
   fetch('https://personal-website-backend-29to.onrender.com/track', { method: 'POST' });
 </script>
+```html
+
 
 
 ### 🛠️ Tech Stack
