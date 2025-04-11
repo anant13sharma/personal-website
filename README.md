@@ -33,7 +33,7 @@ This project includes a lightweight visitor tracking system built with **Node.js
 
 ### 🛠️ Tech Stack
 
-- **Backend:** Node.js, Express
+- **Backend:** Node.js, Express, Render
 - **Database:** MongoDB Atlas
 - **Tools:** `useragent`, `dotenv`, `cors`
 - **Hosting:** Render
