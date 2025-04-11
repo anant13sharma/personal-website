@@ -18,18 +18,29 @@ A clean, responsive, and developer-friendly personal portfolio template built us
 
 ## 📊 Visitor Tracking Feature
 
-This project includes a lightweight visitor tracking system built with **Node.js**, **Express**, and **MongoDB Atlas**. It logs basic visitor metadata to gain insights into how the site is accessed and from what devices or browsers.
+This is a lightweight backend server that logs visitor information such as IP address, operating system, and browser type. It's built with Express and MongoDB and is designed to be triggered directly from the front end using a simple `fetch()` call—perfect for tracking visits to a portfolio, personal site, or landing page.
 
-### 🔍 What It Does
+---
 
-- Tracks each visit to the website via a `POST` request from the frontend.
-- Logs the following details:
-  - 🌐 **IP Address**
-  - 💻 **Device Info**
-  - 🖥️ **Operating System**
-  - 🧭 **Browser Name & Version**
-  - 🕒 **Timestamp**
-- Stores all the collected data in a MongoDB Atlas collection.
+## 🚀 Features
+
+- Captures visitor IP and device/browser info
+- Saves data securely in MongoDB
+- No personal info is collected
+- Triggered by a simple `<script>` tag in HTML
+- Hosted backend support (e.g., Render)
+
+---
+
+## 🛠 Live Usage Example
+
+Include this in your site’s HTML to automatically track visits:
+
+```html
+<script>
+  fetch('https://personal-website-backend-29to.onrender.com/track', { method: 'POST' });
+</script>
+
 
 ### 🛠️ Tech Stack
 
