@@ -71,6 +71,8 @@ personal-website/
         └── dark-mode-switch.min.js 
 ├── img/ # Project GIFs, profile image, certificates, etc. 
 ├── icons/ # Logos for tools, tech, and badges 
-├── data.json # Optional: For structured data (certificates, etc.) 
+├── data.json # Optional: For structured data (certificates, etc.)
+├── backend│ 
+           └── server.js │ 
 └── README.md # This file
 🔧 Currently improving mobile responsiveness and accessibility.
