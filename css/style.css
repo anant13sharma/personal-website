@@ -52,6 +52,38 @@ body {
 
 }
 
+
+
+.animated-gradient-text {
+    display: inline-block;
+    background: linear-gradient(120deg, rgba(220, 15, 237, 1) 0%, rgba(0, 212, 255, 1) 100%);
+    background-size: 200% 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    animation: animatedGradient 5s ease infinite;
+  }
+  
+  @keyframes animatedGradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+
+
+
+
+
+
+
 .gradient-hover:hover a {
     font-weight: 600;
     background: -webkit-linear-gradient(120deg, rgba(220, 15, 237, 1) 0%, rgba(0, 212, 255, 1) 100%);
