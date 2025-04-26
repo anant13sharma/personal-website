@@ -55,15 +55,15 @@ body {
 
 
 .animated-gradient-text {
-    display: inline-block;
-    background: linear-gradient(120deg, rgba(220, 15, 237, 1) 0%, rgba(0, 212, 255, 1) 100%);
-    background-size: 200% 200%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
-    animation: animatedGradient 10s ease infinite;
-  }
+  display: inline-block;
+  background: linear-gradient(120deg, rgba(232, 140, 255, 1) 0%, rgba(135, 241, 255, 1) 100%);
+  background-size: 200% 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: animatedGradient 10s ease infinite;
+}
   
   @keyframes animatedGradient {
     0% {
